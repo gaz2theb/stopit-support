@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stop It! Support - A precision timing game for iOS. Get help, FAQs, and contact information.">
+    <title>Stop It! - Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 22px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            color: #666;
+            font-style: italic;
+        }
+
+        h2 {
+            color: #667eea;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        h3 {
+            color: #764ba2;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .faq-answer {
+            color: #666;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .contact-box p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .email-link {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .email-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .app-store-badge {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .badge-link {
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+
+        .badge-link:hover {
+            transform: scale(1.05);
+        }
+
+        .badge-link img {
+            height: 50px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #f0f0f0;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-icon">⏱️</div>
+            <h1>Stop It!</h1>
+            <p class="tagline">Think you've got perfect timing? Prove it.</p>
+        </div>
+
+        <section>
+            <h2>About Stop It!</h2>
+            <p>Stop It! is a precision-timing mobile game that challenges your reflexes and timing. The concept is simple: stop the timer exactly on the target time. Sounds easy? Think again.</p>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Precision Challenge</h3>
+                    <p>Hit the exact target time down to 0.01 seconds</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌟</div>
+                    <h3>Simple Design</h3>
+                    <p>Clean, minimalist interface keeps you focused</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Quick Sessions</h3>
+                    <p>Perfect for 30-second gaming breaks</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>How to Play</h2>
+            <ul>
+                <li><strong>Tap to Start:</strong> The timer begins counting up</li>
+                <li><strong>Tap to Stop:</strong> Freeze the timer at your chosen moment</li>
+                <li><strong>Hit the Target:</strong> Your time must match the target exactly (to 2 decimal places)</li>
+                <li><strong>Perfect Hit:</strong> Advance to the next level with confetti and celebration</li>
+                <li><strong>Miss:</strong> Lose a life and try again</li>
+                <li><strong>Complete 10 Levels:</strong> Unlock new worlds and challenges</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">How many lives do I get?</div>
+                <div class="faq-answer">You start with 25 lives per day. Lives reset at midnight UTC. You can watch optional rewarded ads to earn additional lives if you run out.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What does "2 decimal precision" mean?</div>
+                <div class="faq-answer">Your timer must land exactly on the target time to two decimal places. For example, if the target is 3.00 seconds, stopping at 2.99 or 3.01 will count as a miss. The timer rounds to 2 decimal places for evaluation.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is the game free?</div>
+                <div class="faq-answer">Yes! The core game is completely free to play. There are optional rewarded ads you can watch to earn extra lives, but there are no paywalls blocking your progress.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">When do lives reset?</div>
+                <div class="faq-answer">Lives reset daily at 00:00 UTC (midnight UTC). This ensures fair gameplay across all time zones.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I unlock new worlds?</div>
+                <div class="faq-answer">Complete 10 levels in the current world to unlock the next one. Each world introduces new themes and challenges.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">My timer seems laggy or unresponsive. What should I do?</div>
+                <div class="faq-answer">Try closing other apps running in the background and ensure your device has enough free memory. If the issue persists, try restarting your device. Contact support if problems continue.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I play offline?</div>
+                <div class="faq-answer">The core gameplay works offline, but you'll need an internet connection for progress syncing, watching rewarded ads, and accessing certain features.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How is my data used?</div>
+                <div class="faq-answer">Stop It! uses anonymous Firebase authentication to save your progress. We collect minimal data necessary for gameplay (level progress, lives, settings) and advertising. See our Privacy Policy below for full details.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I disable ads?</div>
+                <div class="faq-answer">All ads in the game are optional rewarded ads that you choose to watch in exchange for extra lives. There are no forced interstitial ads interrupting your gameplay.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Will my progress sync across devices?</div>
+                <div class="faq-answer">Yes! Your progress is saved to the cloud using Firebase, so you can pick up where you left off on any device.</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Privacy & Data</h2>
+            <h3>What data we collect:</h3>
+            <ul>
+                <li>Anonymous user ID for progress tracking</li>
+                <li>Game progress (levels completed, current world, lives remaining)</li>
+                <li>Device advertising identifier (for relevant ads, with your consent)</li>
+                <li>Basic analytics (crashes, performance metrics)</li>
+            </ul>
+
+            <h3>What we DON'T collect:</h3>
+            <ul>
+                <li>Personal information (name, email, phone number)</li>
+                <li>Location data</li>
+                <li>Contacts or photos</li>
+                <li>Any data not directly related to gameplay</li>
+            </ul>
+
+            <h3>Third-party services:</h3>
+            <ul>
+                <li><strong>Firebase:</strong> Cloud storage for game progress and analytics</li>
+                <li><strong>AdMob:</strong> Serves optional rewarded ads</li>
+            </ul>
+
+            <p>We respect your privacy. All data collection complies with GDPR, CCPA, and Apple's App Tracking Transparency requirements.</p>
+        </section>
+
+        <section>
+            <h2>System Requirements</h2>
+            <ul>
+                <li><strong>Platform:</strong> iOS 13.0 or later</li>
+                <li><strong>Devices:</strong> iPhone only (iPad support coming soon)</li>
+                <li><strong>Storage:</strong> ~50 MB</li>
+                <li><strong>Internet:</strong> Optional (required for progress sync and ads)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Troubleshooting</h2>
+            
+            <h3>Game won't launch or crashes on startup</h3>
+            <ul>
+                <li>Ensure you're running iOS 13.0 or later</li>
+                <li>Restart your device</li>
+                <li>Delete and reinstall the app</li>
+                <li>Ensure you have at least 100 MB of free storage</li>
+            </ul>
+
+            <h3>Progress not saving</h3>
+            <ul>
+                <li>Check your internet connection</li>
+                <li>Ensure the app has permission to access the network</li>
+                <li>Try signing out and back in (if applicable)</li>
+            </ul>
+
+            <h3>Timer feels inaccurate</h3>
+            <ul>
+                <li>The timer updates at 60 FPS for maximum precision</li>
+                <li>Ensure no other apps are causing performance issues</li>
+                <li>Close background apps to free up device resources</li>
+            </ul>
+        </section>
+
+        <div class="contact-box">
+            <h3>Still Need Help?</h3>
+            <p>Can't find what you're looking for? Have feedback or found a bug?</p>
+            <p>We'd love to hear from you!</p>
+            <a href="mailto:support@gzb-apps.com" class="email-link">📧 Contact Support</a>
+        </div>
+
+        <div class="app-store-badge">
+            <!-- Uncomment when app is live on App Store -->
+            <!-- <a href="YOUR_APP_STORE_LINK" class="badge-link">
+                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1234567890" alt="Download on the App Store">
+            </a> -->
+        </div>
+
+        <div class="footer">
+            <p><strong>Stop It!</strong> © 2025 Gary Bennett</p>
+            <p>Made with precision and care</p>
+            <p style="margin-top: 20px; font-size: 0.85em;">
+                <a href="mailto:support@gzb-apps.com" style="color: #667eea; text-decoration: none;">Support</a> • 
+                <a href="privacy.html" style="color: #667eea; text-decoration: none;">Privacy Policy</a> • 
+                <a href="terms.html" style="color: #667eea; text-decoration: none;">Terms of Service</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
